@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 0 0.5em;
+}
+
+.wrapper {
+  padding: 0.5em;
+}
+
+.inputs {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.inputs .dataRow {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.inputs .dataRow input, .inputs .dataRow button {
+  flex: 1 1 auto;
+}
+
+.inputs .dataRow input {
+  width: 5em;
+}
+
+.inputs .rowInput {
+  text-align: center;
+}
+
+.treemap {
+  height: 100vh;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.treemap > .container {
+  flex: 1 1 auto;
+  background: #f3f3f3;
+  border: 1px solid #444;
+}
+
+.treemap .rect {
+  float: left;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.treemap .red {
+  background: #f94144;
+}
+
+.treemap .green {
+  background: #4d908e;
+}
+
+.treemap .name {
+  font-size: 1.5em;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  margin: 0 0 0.5em;
+}
+
+input,
+button {
+  padding: 0.5em;
+  border: 1px solid #444;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    height: 100vh;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .treemap {
+    height: 50vh;
+  }
+  label {
+    text-align: center;
+  }
+}
